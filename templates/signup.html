@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            margin-top : 30px;
+            padding-top : 50px;
         }
     </style>
 </head>
@@ -24,10 +24,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="btn btn-primary mr-2" href="{{ url_for('login') }}">Login</a>
+                    <a class="btn btn-primary mr-2" href="{{ url_for('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-warning" href="{{ url_for('signup') }}">Signup</a>
+                    <a class="btn btn-warning mr-2" href="{{ url_for('login') }}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-danger" href="{{ url_for('signup') }}">Signup</a>
                 </li>
             </ul>
         </div>
